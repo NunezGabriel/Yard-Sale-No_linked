@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            :root{ 
+                --black: #000000
+                --white: #ffffff
+                --very-light-pink: #c7c7c7
+                --text-input-field: #Cbd0d4
+                --hospital-green: #acd9b2
+                --sm: 14px;
+                --md:16px;
+                --lg:18px;
+            }
+            body{
+                margin: 0;
+                font-family:'Quicksand', sans-serif;;
+            }
+            .cards-Container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill,240px);/*en vez de poner 1fr 1fr para poner 2 columnas usamos esta funcion donde
+                 indicamos el numero de columnas y el tamaño...es mas practico en este caso en vez de poner un numero de columnas colocamos
+                 auto-fill para que ese numero varie dependiendo el tamaño de la pantalla*/
+                gap: 26px;
+                place-content: center; 
+            }
+            .product-Card{
+                width: 240px;
+            }
+            .product-Card img{
+                width: 240px;
+                height: 240px;
+                border-radius: 20px;
+                object-fit: cover; /*la imgaen tendra su tamaño tal cual independiente del width o height que se le coloque... osea se usa para que no se vea mal*/
+            }
+            .product-info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 12px;
+            }
+            .product-info figure{
+                margin: 0;
+            }
+            .product-info figure img{
+                width: 35px;
+                height: 35px;
+                margin: 0;
+            }
+            .product-info div p:nth-child(1){
+                font-weight: bold;
+                font-size: var(--md);
+                margin-top: 0;
+                margin-bottom: 4px;
+            }
+            .product-info div p:nth-child(2){
+                font-size: var(--sm);
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #c7c7c7;
+            }
+            @media(max-width: 640px){
+                .cards-Container{
+                    grid-template-columns: repeat(auto-fill,140px);
+                }
+                .product-Card{
+                    width: 140px;
+                }
+                .product-Card img{
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="main-Container">
+            <div class="cards-Container">
+
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+                <div class="product-Card">
+                    <img src="https://voltbikes.co.uk/images/gallery/updated/pulse-slider-gallery-1.jpg">
+                    <div class="product-info">
+                        <div>
+                            <p>$120,00</p>
+                            <p>Bike</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" >
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
